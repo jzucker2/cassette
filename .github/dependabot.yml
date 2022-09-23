@@ -24,11 +24,11 @@ updates:
     labels:
       - dependencies
     allow:
-      # Allow updates for express and related packages
+      # Allow updates for react and related packages
       - dependency-name: "react*"
       - dependency-name: "web-vitals"
-      # custom for this project
+      # common for all projects
       - dependency-name: "superagent"
       - dependency-name: "process"
-      # serve the site
+      # serve the static site
       - dependency-name: "serve"
