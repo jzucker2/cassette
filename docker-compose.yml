@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  cassette:
+    container_name: cassette
+    env_file: .env.development
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    stdin_open: true
