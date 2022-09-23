@@ -27,7 +27,7 @@ updates:
       # Allow updates for react and related packages
       - dependency-name: "react*"
       - dependency-name: "web-vitals"
-      # common for all project
+      # common for all projects
       - dependency-name: "superagent"
       - dependency-name: "process"
       # serve the static site
