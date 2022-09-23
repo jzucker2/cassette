@@ -24,7 +24,7 @@ updates:
     labels:
       - dependencies
     allow:
-      # Allow updates for express and related packages
+      # Allow updates for react and related packages
       - dependency-name: "react*"
       - dependency-name: "web-vitals"
       # custom for this project
