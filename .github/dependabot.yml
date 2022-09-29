@@ -32,3 +32,5 @@ updates:
       - dependency-name: "process"
       # serve the static site
       - dependency-name: "serve"
+      # monitoring
+      - dependency-name: "@cabify/prom-react"
