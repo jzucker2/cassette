@@ -41,4 +41,4 @@ CMD ["serve", "-s", "build", "-l", "3000"]
 ## Base Image
 
 This is a base image for react projects. 
-For more info on node (+ react) base images, see [tapedeck](https://github.com/jzucker2/tapedeck)
+For more info on node (+ express) base images, see [tapedeck](https://github.com/jzucker2/tapedeck)
