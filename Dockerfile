@@ -1,10 +1,15 @@
 # https://github.com/nodejs/docker-node/issues/1589
 FROM node:16 AS debian_base
 
+FROM debian_base AS node_globals
+ARG NPM_VERSION=8.19.2
+RUN npm install -g npm@${NPM_VERSION}
+
+ARG SERVE_VERSION=14.0.1
+RUN yarn global add serve@${SERVE_VERSION}
+
 # from https://github.com/nodejs/docker-node/pull/367
-FROM debian_base AS node_dependencies
-ARG SERVER_VERSION=14.0.1
-RUN yarn global add serve@${SERVER_VERSION}
+FROM node_globals AS node_dependencies
 
 WORKDIR /app
 
