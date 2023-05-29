@@ -1,12 +1,9 @@
 # https://github.com/nodejs/docker-node/issues/1589
-FROM node:18 AS debian_base
+FROM node:20 AS debian_base
 
 FROM debian_base AS node_globals
-ARG NPM_VERSION=9.6.4
+ARG NPM_VERSION=9.6.6
 RUN npm install -g npm@${NPM_VERSION}
-
-ARG SERVE_VERSION=14.2.0
-RUN yarn global add serve@${SERVE_VERSION}
 
 # from https://github.com/nodejs/docker-node/pull/367
 FROM node_globals AS node_dependencies
