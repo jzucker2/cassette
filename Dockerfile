@@ -2,7 +2,7 @@
 FROM node:20 AS debian_base
 
 FROM debian_base AS node_globals
-ARG NPM_VERSION=9.6.6
+ARG NPM_VERSION=9.7.1
 RUN npm install -g npm@${NPM_VERSION}
 
 # from https://github.com/nodejs/docker-node/pull/367
@@ -33,6 +33,8 @@ RUN rm package.json
 # also remove the `yarn.lock`
 RUN rm yarn.lock
 
-FROM clean_up AS test_build
+FROM clean_up AS finish_build
 COPY /scripts /cassette/scripts
+
+COPY /nginx /nginx
 CMD ["sh", "cassette/scripts/test.sh"]

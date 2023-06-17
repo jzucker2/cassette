@@ -3,6 +3,7 @@
 To deploy, there's some things to consider to start a repo:
 
 * https://github.com/docker/buildx/issues/206
+* https://github.com/browserslist/browserslist/issues/663
 
 ```
 #29 [linux/arm/v7 build_prod 1/1] RUN yarn build
