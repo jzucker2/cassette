@@ -1,6 +1,6 @@
 {
   "name": "cassette",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "Base image for all react projects",
   "private": true,
   "dependencies": {
@@ -11,16 +11,17 @@
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-modal": "^3.15.1",
+    "react-modal": "^3.16.1",
     "react-scripts": "5.0.1",
-    "superagent": "^8.0.2",
-    "web-vitals": "^3.0.2"
+    "superagent": "^8.0.9",
+    "web-vitals": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-flow": "^7.22.5",
+    "@babel/plugin-transform-react-jsx": "^7.22.5",
+    "@testing-library/dom": "^9.3.1",
+    "typescript": "^5.1.3"
   }
 }

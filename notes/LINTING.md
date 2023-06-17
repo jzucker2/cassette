@@ -1,6 +1,6 @@
 # Linting
 
-I still haven't gotten this working.
+I got it working in downstream apps with actual `src` code
 
 ## Research
 
