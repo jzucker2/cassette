@@ -42,6 +42,7 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 ## External Links
 
 * https://jsramblings.com/dockerizing-a-react-app/
+* https://stackoverflow.com/questions/76435306/babel-preset-react-app-is-importing-the-babel-plugin-proposal-private-propert
 
 ## Dev Work
 
