@@ -1,6 +1,6 @@
-# Deploy Images
+# Build Images
 
-To deploy, there's some things to consider to start a repo:
+To build, there's some things to consider to start a repo:
 
 * https://github.com/docker/buildx/issues/206
 * https://github.com/browserslist/browserslist/issues/663
