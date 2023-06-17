@@ -39,6 +39,10 @@ COPY --from=build_prod /app/build .
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 ```
 
+## External Links
+
+* https://jsramblings.com/dockerizing-a-react-app/
+
 ## Dev Work
 
 * https://github.com/jzucker2/hal/pull/40
